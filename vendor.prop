@@ -182,6 +182,7 @@ debug.sf.early_gl_app_phase_offset_ns=15000000
 debug.sf.hw=0
 persist.sys.sf.color_saturation=1.0
 ro.opengles.version=196610
+ro.surface_flinger.enable_frame_rate_override=false
 vendor.display.comp_mask=0
 vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
 vendor.display.disable_decimation=1
