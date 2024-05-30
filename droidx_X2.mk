@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/droidx/config/common.mk)
 
 # Inherit from X2 device
 $(call inherit-product, device/realme/X2/device.mk)
@@ -21,8 +21,11 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := false
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_X2
+PRODUCT_NAME := droidx_X2
 PRODUCT_DEVICE := X2
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme X2
@@ -34,3 +37,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := realme/RMX1993/RMX1993L1:11/RKQ1.201112.002/1639416071279:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
+
+#droidxOS
+DROIDX_BUILDTYPE := UNOFFICIAL
+DROIDX_GAPPS := CoreGapps
