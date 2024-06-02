@@ -12,10 +12,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# UDFPS animations
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+# AlphaDroid
+ALPHA_BUILD_TYPE := UNOFFICIAL
+ALPHA_MAINTAINER := JigenxOhtsusuki
+WITH_GAPPS := true
+
 # Inherit from X2 device
 $(call inherit-product, device/realme/X2/device.mk)
-EXTRA_UDFPS_ANIMATIONS := true
-TARGET_NOT_USES_BLUR := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 
 # Bootanimation
