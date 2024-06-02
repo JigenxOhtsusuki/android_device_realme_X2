@@ -12,6 +12,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+MATRIXX_BUILD_TYPE := Unofficial
+MATRIXX_MAINTAINER := JigenxOhtsusuki
+MATRIXX_CHIPSET := Snapdragon 730G
+MATRIXX_BATTERY := 4000mah
+MATRIXX_DISPLAY := 1080x2340
+
 # Inherit from X2 device
 $(call inherit-product, device/realme/X2/device.mk)
 EXTRA_UDFPS_ANIMATIONS := true
