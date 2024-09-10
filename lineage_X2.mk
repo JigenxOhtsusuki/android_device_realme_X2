@@ -14,6 +14,12 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from X2 device
 $(call inherit-product, device/realme/X2/device.mk)
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_NOT_USES_BLUR := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_X2
